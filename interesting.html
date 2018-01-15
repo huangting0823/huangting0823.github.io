@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		ul li{
+			margin-left: 400px;
+			width:100px;
+			float:left;
+		}
+	</style>
+	<img src="heidian.png" width="50px" height="60px">
+    <title>Huangting</title>
+        <style>    
+*{ margin:0; padding:0; list-style:none;}    
+#box{ width:900px; border:1px solid #000; height:210px; margin:100px auto; position:relative; overflow:hidden;}    
+#box ul{ position:absolute; left:0; top:0;}    
+#box ul li{ width:200px; height:200px; float:left; padding:5px;}    
+</style>    
+<script>    
+window.onload=function(){    
+	var oBox=document.getElementById('box');    
+	var oUl=oBox.children[0];    
+	var aLi=oUl.children;    
+	    
+	//复制一份内容 ，制作出无缝的效果   
+	oUl.innerHTML+=oUl.innerHTML;    
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+	    
+	setInterval(function(){   //开定时器，这样就可以自己切换，无需人工干预。 
+		var l=oUl.offsetLeft-3;  //图片切换，就是移动距离
+		if(l<=-oUl.offsetWidth/2){    
+			l=0;    
+		}    
+		oUl.style.left=l+'px';    
+	},30);    
+};    
+</script> 
+</head>
+	<body bgcolor=lightgrey
+      link="#003366">
+     <font color=white
+          size=3
+          face="Arial">
+	<h2 style="margin-left: 50px" >HuangTing</h2>
+
+    <ul style ="line-height: 150%;color: #ffffff;float: left;">
+     <li>telephone:15980845904</li>
+     <li>email:1092869673@qq.com</li>
+     <li>Address:china</li>
+    </ul>
+    
+<div id="box">    
+    <ul>    
+   	   <li><img src="5.jpg" width="400"></li>    
+       <li><img src="2.jpg" width="400"></li>    
+       <li><img src="3.jpg" width="400"></li>    
+       <li><img src="4.jpg" width="400"></li> 
+       <li><img src="6.jpg" width="400"></li> 
+       <li><img src="7.jpg" width="400"></li>      
+   </ul>    
+</div>
+ 
+ <div style="width:1908px;height: 100px;background-color: black;margin-top: 110px " >
+
+ 	<h4 style=" height:25px; margin-left:400px;line-height: 40px ">I LOVE FOOD TRAVEL COMFORTABLE LIFE,LIKE IN THE WARM SUN, </h4><a href="share.html">
+ 	  	<button style="width: 150px;height:50px; color:white;margin-left: 1350px" >share</button>
+ 	  </a>>
+ 	<h4 style=" margin-left: 400px">HOLDING A BOOK READING,TWO OR THREE FRIENDS,CHAT </h4>
+ 	
+ </div>
+ <div>
+ <h2 style="margin-left: 100px; float:left" >creation method</h2>
+ <table style=" word-break: break-all;word-wrap: break-all">Walnut cake is a special snack of Han nationality.Choose the best walnut kernel,add the right sesame seed into the paste ,spread the pepper and salt on the fermented surface,make the round cake ,and cook it in the oven,then become walnut cake,if the dough baking sheet,called""  </table>
+ <h4 style="margin-left: 100px; float:left"></h4>
+ <img src="6.jpg" width="300px" height="260px" style="margin-left: 1350px; margin-top:5px ;float:left;">
+</div>
+ 
+</font>> 
+</body>
+</html>>
